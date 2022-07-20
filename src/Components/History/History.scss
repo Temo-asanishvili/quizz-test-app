@@ -1,0 +1,45 @@
+.history-table {
+  width: 100%;
+
+  h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    padding: 20px 0px;
+  }
+  table {
+    width: 50%;
+    margin: 0 auto;
+
+    thead {
+      border-top: 2px solid rgb(231, 201, 28);
+      border-bottom: 2px solid rgb(231, 201, 28);
+      th {
+        text-transform: uppercase;
+        text-align: center;
+        padding: 10px;
+        color: #f56130;
+        border: 1px solid rgb(231, 201, 28);
+      }
+    }
+    tbody {
+      tr {
+        border-bottom: 1px solid rgb(231, 201, 28);
+        color: red;
+        text-align: center;
+        td {
+          padding: 10px;
+          border: 1px solid rgb(231, 201, 28);
+        }
+        th {
+          padding-left: 10px;
+          border: 1px solid rgb(231, 201, 28);
+        }
+      }
+    }
+  }
+}
+.btn-wrapper-history {
+  padding-top: 20px;
+}
