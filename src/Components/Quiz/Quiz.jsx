@@ -34,12 +34,23 @@ const Quiz = () => {
         answers: getDataWithExpiry("data").answers,
       });
     };
-    getDataWithExpiry("data")
-      ? setData({
-          questions: getDataWithExpiry("data").questions,
-          answers: getDataWithExpiry("data").answers,
-        })
-      : getData();
+    //   getDataWithExpiry("data")
+    //     ? setData({
+    //         questions: getDataWithExpiry("data").questions,
+    //         answers: getDataWithExpiry("data").answers,
+    //       })
+    //     : getData();
+    // }, []);
+    const dataWithExpiry = getDataWithExpiry("data");
+
+    if (dataWithExpiry) {
+      setData({
+        questions: getDataWithExpiry("data").questions,
+        answers: getDataWithExpiry("data").answers,
+      });
+    } else {
+      getData();
+    }
   }, []);
 
   const { questions, answers } = data;
